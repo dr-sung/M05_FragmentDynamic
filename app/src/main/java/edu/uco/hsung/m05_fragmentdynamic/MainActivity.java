@@ -18,7 +18,6 @@ public class MainActivity extends Activity implements
     private FrameLayout mTitleFrameLayout, mQuotesFrameLayout;
 
     private static final int MATCH_PARENT = LinearLayout.LayoutParams.MATCH_PARENT;
-    private static final String TAG = "QuoteViewerActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

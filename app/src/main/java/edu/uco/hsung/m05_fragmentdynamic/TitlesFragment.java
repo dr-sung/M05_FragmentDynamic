@@ -7,7 +7,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class TitlesFragment extends ListFragment {
-	private static final String TAG = "TitlesFragment";
 	private ListSelectionListener mListener = null;
 
 	public interface ListSelectionListener {

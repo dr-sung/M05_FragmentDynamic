@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class QuotesFragment extends Fragment {
+import static android.content.ContentValues.TAG;
 
-	private static final String TAG = "QuotesFragment";
+public class QuotesFragment extends Fragment {
 
 	private TextView mQuoteView = null;
 	private int mCurrIdx = -1;
