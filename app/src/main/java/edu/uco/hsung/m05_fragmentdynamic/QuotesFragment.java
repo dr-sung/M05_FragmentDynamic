@@ -2,13 +2,10 @@ package edu.uco.hsung.m05_fragmentdynamic;
 
 import android.app.Fragment;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import static android.content.ContentValues.TAG;
 
 public class QuotesFragment extends Fragment {
 
@@ -30,7 +27,6 @@ public class QuotesFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onCreateView()");
 
 		return inflater.inflate(R.layout.quote_fragment,
 				container, false);
@@ -38,7 +34,6 @@ public class QuotesFragment extends Fragment {
 	
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onActivityCreated()");
 		super.onActivityCreated(savedInstanceState);
 
 		mQuoteView = (TextView) getActivity().findViewById(R.id.quoteView);

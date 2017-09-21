@@ -39,11 +39,12 @@ public class MainActivity extends Activity implements
         fragmentTransaction.commit();
 
         mFragmentManager
-                .addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
-                    public void onBackStackChanged() {
-                        setLayout();
-                    }
-                });
+                .addOnBackStackChangedListener(
+                        new FragmentManager.OnBackStackChangedListener() {
+                            public void onBackStackChanged() {
+                                setLayout();
+                            }
+                        });
     }
 
     private void setLayout() {
